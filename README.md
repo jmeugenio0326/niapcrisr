@@ -39,3 +39,15 @@ The administrator is stored at `users/admin` with passcode `1234`. After signing
 npm test
 npm run build
 ```
+
+## GitHub Pages deployment
+
+Every push to `main` runs the tests, creates a production build, and deploys `dist` through GitHub Pages.
+
+After enabling **Settings → Pages → Source: GitHub Actions** in the repository, the app is available at:
+
+```text
+https://jmeugenio0326.github.io/niapcrisr/
+```
+
+The Vite base path is configured for the repository name, so assets load correctly from the GitHub Pages subpath.
