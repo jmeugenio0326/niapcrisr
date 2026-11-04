@@ -51,3 +51,5 @@ https://jmeugenio0326.github.io/niapcrisr/
 ```
 
 The Vite base path is configured for the repository name, so assets load correctly from the GitHub Pages subpath.
+
+Vercel automatically uses the domain root (`/`) through the `VERCEL` environment variable, so the same repository works on both GitHub Pages and Vercel.
