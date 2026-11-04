@@ -42,9 +42,9 @@ npm run build
 
 ## GitHub Pages deployment
 
-Every push to `main` runs the tests, creates a production build, and deploys `dist` through GitHub Pages.
+Every push to `main` runs the tests, creates a production build, and publishes the generated `dist` files to the `gh-pages` branch through GitHub Actions. `node_modules` is intentionally not committed; GitHub installs it from `package-lock.json` during the workflow.
 
-After enabling **Settings → Pages → Source: GitHub Actions** in the repository, the app is available at:
+In the repository settings, set **Pages → Source** to **Deploy from a branch**, select `gh-pages` and `/ (root)`, then save. The app is available at:
 
 ```text
 https://jmeugenio0326.github.io/niapcrisr/
